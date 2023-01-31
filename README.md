@@ -54,6 +54,12 @@ The Wind/Rain/Status View
 The Time and Date View
 ![Time and Date View](photos/time_and_date_view.jpg)
 
+The 433.92MHz receiver - I tried many 433MHz receivers but this one worked best for me
+![433.92Mhz Receiver](photos/syn480R.jpg)
+
+The Indoor Sensor
+![Indoor Sensor](photos/bme280.jpg)
+
 # Versions
 ### v1.0 : 
 - initial release
