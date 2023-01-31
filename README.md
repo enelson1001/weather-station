@@ -52,7 +52,7 @@ The Wind/Rain/Status View
 ![Wind Rain Status View](photos/wind_rain_status_view.jpg)
 
 The Time and Date View
-![Time and Date View](photos/time_and_date_view.jpg)
+![Time and Date View](photos/time_date_view.jpg)
 
 The 433.92MHz receiver - I tried many 433MHz receivers but this one worked best for me
 ![433.92Mhz Receiver](photos/syn480R.jpg)
