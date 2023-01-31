@@ -1,0 +1,71 @@
+[package]
+name = "weather-station"
+version = "0.1.0"
+authors = ["enelson1001 <ednelson5080@gmail>"]
+edition = "2021"
+resolver = "2"
+
+[profile.release]
+opt-level = "s"
+
+[profile.dev]
+debug = true # Symbols are nice and they don't increase the size on Flash
+opt-level = "z"
+
+[features]
+pio = ["esp-idf-sys/pio"]
+
+#[dependencies.cargo-espflash]
+#git = "https://github.com/esp-rs/espflash"
+#rev = "v2.0.0-rc.2"
+
+[dependencies]
+esp-idf-svc = "0.45"
+esp-idf-sys = { version = "0.32.0", features = ["binstart"] }
+esp-idf-hal = "0.40.1"
+
+
+embedded-svc = "0.24.0"
+embedded-hal = "=1.0.0-alpha.9"
+embedded-hal-0-2 = { package = "embedded-hal", version = "0.2.7", features = ["unproven"] }
+
+crossbeam-channel = "0.5"
+
+time = { version = "0.3.17", features = ["macros", "formatting"] }
+
+
+ds323x = "0.5.0"
+
+heapless = "0.7"
+shared-bus = { version = "0.2.5", features = ["std"] }
+
+log = "0.4"
+
+#ili9341 = { git = "https://github.com/yuri91/ili9341-rs" }
+display-interface-spi = "0.4.1"
+embedded-graphics = "0.7.1"
+
+debouncr = "0.2.2"
+
+mipidsi = { git = "https://github.com/almindor/mipidsi"}
+gfx-xtra = "0.1"
+
+u8g2-fonts = { version = "0.2.0", features = ["embedded_graphics_textstyle"] }
+
+
+anyhow = "1.0.58"
+
+
+bme280-rs = "0.1.0"
+
+cargo-espflash = { git = "https://github.com/esp-rs/espflash", rev = "v2.0.0-rc.2"}
+
+#espflash = { git = "https://github.com/esp-rs/espflash", rev = "v2.0.0-rc.2"}
+
+[build-dependencies]
+
+embuild = "0.31"
+anyhow = "1"
+
+
+
